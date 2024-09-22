@@ -1,0 +1,31 @@
+.LogInContainer{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100vw;
+    height: 1100px;
+}
+
+.LoginBox{
+    padding: 35px 12px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 400px;
+    height: 700px;
+    background: rgb(15,44,117);
+background: linear-gradient(45deg, rgba(rgb(30,55,119)) 77%, rgba(rgb(30,55,119)) 100%);
+    border: 2px solid black;
+}
+
+.inputbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.inputbox input {
+    color: #000;
+}

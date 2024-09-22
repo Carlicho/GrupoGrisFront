@@ -1,0 +1,21 @@
+.carousel-container img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    
+    
+    
+    
+  }
+  
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 9.125rem;
+    max-height: 500px;
+    margin: 0 auto;
+    border: 1px solid red; /* Prueba con una propiedad visible para verificar */
+    background-color: #ffff;
+  }

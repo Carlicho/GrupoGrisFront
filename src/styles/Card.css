@@ -1,0 +1,36 @@
+.Card-Container{
+    padding: .9375rem 0;
+    width: 15.375rem;
+    height: 12.5rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background: rgb(249,104,0);
+    background: linear-gradient(350deg, rgba(249, 104, 0, 0.096) 0%, rgba(249, 112, 0, 0.61) 100%);
+    font-size: 1rem;
+    @media (max-width: 1200px) {
+    
+    width: 5rem;
+    height: 12rem;
+    }
+}
+
+
+.Card-btn{
+    width: 7.5rem;
+    height: 1.4rem;
+    background-color: #172a5c;
+    color: #fff;
+    font-size: 1em;
+}
+.cardImg {
+    width: 6rem;
+    
+}
+
+
+
+.cardimgContainer{
+    height: 6.875rem;
+}

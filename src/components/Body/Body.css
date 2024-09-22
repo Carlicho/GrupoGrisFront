@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.body-container{
+    margin:  20px 0 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.bodyh1{
+    padding: 0.8rem;
+}
+
+.MenWomen{
+    width: 100vw;
+    margin: 10rem 0;
+}
+
+.videoContainer {
+    margin: 4rem 0 220px 0;
+    position: relative;
+    width: 100vw;
+    height: 900px; /* Ajusta según tus necesidades */
+}
+
+.video {
+    position: relative;
+    width: 100vw;
+    height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
+    
+    @media (max-width: 1200px) {
+        width: 42rem; 
+        height: auto; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+
+.textvideocontainer {
+    position: absolute;
+    bottom: 15%;  /* Ajusta la posición desde el borde inferior */
+    left: 70%;   /* Ajusta la posición desde el lado izquierdo */
+    transform: translateX(-50%); /* Opcional, para ajustes finos en el centrado horizontal */
+    text-shadow: -2px -2px #947d60, 2px 2px #947d60;
+    color: #ececec;
+    background-color: #f968006e;
+    width: 38.25rem;
+    height: 18.875rem;
+    font-size: 18px;
+    padding: 4rem 0 0 0;
+    
+    @media (max-width: 1200px) {
+        width: 15rem;
+        height: 10rem;
+        font-size: 0.4em;
+        bottom: 10%; /* Ajusta la posición para pantallas pequeñas */
+        left: 50%;   /* Centra el contenedor en pantallas pequeñas */
+        transform: translateX(-50%); /* Centra en pantallas pequeñas */
+    }
+}
+
+
+.videobtn {
+    width: 7.2rem;
+    height: 3.375rem;
+    background-color: #172a5c;
+    color: #fff;
+    font-size: 1rem;
+
+    @media (max-width: 1200px) {
+
+        width: 4rem;
+        height: 2rem;
+        font-size: 1em;
+    }
+}
+
+.MenWomen{
+    @media (max-width: 1200px) {
+    
+        width: 80vw;
+        height: 12rem;
+        }
+}
+
+.HomeHombres{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+    margin-top:6.5625rem
+}
+
+.HomeMujeres{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+    margin-top:6.5625rem;
+    margin-bottom: 6.5625rem
+}
+
+.banderas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 9.25rem;
+    margin: 1.875rem 0;
+   
+
+    @media (max-width: 1200px) {
+    
+        width: 98vw;
+        height: 12rem;
+        }
+    
+}
+
+.cardsContainer{
+    display: flex;
+}
+
+.cardsBody{
+    background-color: #ffffff;
+    width: 93vw;
+    height: 30rem;
+    display: flex;
+    overflow-x: auto; 
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #dfe4e6;
+    border-radius: .5rem;
+}
+
+.BodyCardsBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: .625rem; 
+    width: 5rem;
+    padding: .5rem;
+  
+
+}
