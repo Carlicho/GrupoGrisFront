@@ -1,11 +1,15 @@
 .cardsContainer{
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    overflow-x: auto; /* deslizamiento horizontal */
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory; /* Deslizamiento suave */
+    gap: 10px; /* Espacio entre cartas */
+    align-items: center; 
     width:  20vw;
     margin:  25px 50px 80px  0;
-    background-color: #ffffff;
+    padding: 20px;
+    background-color: #ffff ff;
     
 
     @media (max-width: 1200px) {

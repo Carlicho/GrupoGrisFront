@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-
-.body-container{
-    margin:  20px 0 0 0;
+/* Contenedor principal del cuerpo */
+.body-container {
+    margin: 20px 0 0 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -13,11 +13,11 @@
     font-style: normal;
 }
 
-.bodyh1{
+.bodyh1 {
     padding: 0.8rem;
 }
 
-.MenWomen{
+.MenWomen {
     width: 100vw;
     margin: 10rem 0;
 }
@@ -33,18 +33,13 @@
     position: relative;
     width: 100vw;
     height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
-    
-    @media (max-width: 1200px) {
-        width: 42rem; 
-        height: auto; /* Ajusta la altura para pantallas pequeñas */
-    }
 }
 
 .textvideocontainer {
     position: absolute;
     bottom: 15%;  /* Ajusta la posición desde el borde inferior */
     left: 70%;   /* Ajusta la posición desde el lado izquierdo */
-    transform: translateX(-50%); /* Opcional, para ajustes finos en el centrado horizontal */
+    transform: translateX(-50%); /* Ajustes finos en el centrado horizontal */
     text-shadow: -2px -2px #947d60, 2px 2px #947d60;
     color: #ececec;
     background-color: #f968006e;
@@ -52,17 +47,7 @@
     height: 18.875rem;
     font-size: 18px;
     padding: 4rem 0 0 0;
-    
-    @media (max-width: 1200px) {
-        width: 15rem;
-        height: 10rem;
-        font-size: 0.4em;
-        bottom: 10%; /* Ajusta la posición para pantallas pequeñas */
-        left: 50%;   /* Centra el contenedor en pantallas pequeñas */
-        transform: translateX(-50%); /* Centra en pantallas pequeñas */
-    }
 }
-
 
 .videobtn {
     width: 7.2rem;
@@ -70,77 +55,112 @@
     background-color: #172a5c;
     color: #fff;
     font-size: 1rem;
+}
 
-    @media (max-width: 1200px) {
+@media (max-width: 1200px) {
+    .MenWomen {
+        width: 80vw;
+        height: 12rem;
+    }
 
+    .video {
+        width: 42rem; 
+        height: auto; /* Ajusta la altura para pantallas pequeñas */
+    }
+
+    .textvideocontainer {
+        width: 15rem;
+        height: 10rem;
+        font-size: 0.4em;
+        bottom: 10%; /* Ajusta la posición para pantallas pequeñas */
+        left: 50%;   /* Centra el contenedor en pantallas pequeñas */
+        transform: translateX(-50%); /* Centrado */
+    }
+
+    .videobtn {
         width: 4rem;
         height: 2rem;
         font-size: 1em;
     }
 }
 
-.MenWomen{
-    @media (max-width: 1200px) {
-    
-        width: 80vw;
-        height: 12rem;
-        }
-}
-
-.HomeHombres{
+.HomeHombres {
     border-bottom: 1px solid rgba(0, 0, 0, 0.452);
-    margin-top:6.5625rem
+    margin-top: 6.5625rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.HomeMujeres{
+.HomeMujeres {
     border-bottom: 1px solid rgba(0, 0, 0, 0.452);
-    margin-top:6.5625rem;
-    margin-bottom: 6.5625rem
+    margin-top: 6.5625rem;
+    margin-bottom: 6.5625rem;
 }
 
-.banderas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100vw;
-    height: 9.25rem;
-    margin: 1.875rem 0;
-   
 
-    @media (max-width: 1200px) {
-    
-        width: 98vw;
-        height: 12rem;
-        }
-    
+
+
+
+    /* Contenedor de las cartas */
+    .cardsContainer {
+        display: flex;
+        justify-content: flex-start; /* Alinea las cartas al inicio */
+        align-items: center;
+        overflow-x: auto; /* Habilita el desplazamiento horizontal */
+        gap: 10px; /* Espacio entre cartas */
+        scroll-snap-type: x mandatory; /* Deslizamiento suave */
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Contenedor interno de las cartas */
+    .cardsBody {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+        scroll-snap-type: x mandatory; /* Suaviza el desplazamiento */
+        padding: 10px;
+        background-color: #ffffff;
+        border: 2px solid #dfe4e6;
+        border-radius: .5rem;
+        width: 100%;
+        height: 30rem;
+        box-sizing: border-box; /* Para evitar que el padding rompa el layout */
+    }
+
+/* Estilos individuales para cada carta */
+.card {
+    flex: 0 0 20%; /* Cada carta ocupará 1/5 del ancho */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+    scroll-snap-align: center; /* Alinea las cartas al deslizar */
 }
 
-.cardsContainer{
-    display: flex;
+/* Ocultar la barra de desplazamiento horizontal */
+.cardsContainer::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores Webkit (Chrome, Safari) */
 }
 
-.cardsBody{
-    background-color: #ffffff;
-    width: 93vw;
-    height: 30rem;
-    display: flex;
-    overflow-x: auto; 
-    white-space: nowrap;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border: 2px solid #dfe4e6;
-    border-radius: .5rem;
+@media (max-width: 768px) {
+    .card {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
 }
 
-.BodyCardsBtn{
+/* Botón de navegación */
+.BodyCardsBtn {
     position: absolute;
     top: 0;
     left: 0;
-    margin: .625rem; 
+    margin: 0.625rem; 
     width: 5rem;
-    padding: .5rem;
-  
-
+    padding: 0.5rem;
+    background-color: #172a5c;
+    color: #fff;
+    font-size: 1rem;
 }

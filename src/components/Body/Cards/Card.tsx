@@ -10,11 +10,7 @@ interface CardProps {
   gender: string;
 }
 
-
-    
 const Card: React.FC<CardProps> = ({ id, name, species, image, gender }) => {
-  console.log('Card id:', id); // Verifica el valor del id
-
   return (
     <div className='cardContainer'>
       <Link to={`/card-detail/${id}`} style={{ textDecoration: 'none' }}>

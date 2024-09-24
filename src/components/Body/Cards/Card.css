@@ -1,15 +1,21 @@
 .cardContainer {
     /* display and Size */
     display: flex;
-    position: relative;
+    flex: 0 0 20%; /* Las cartas ocuparán 20% del ancho del contenedor */
+    background-color: #f0f0f0;
+    margin: 10px 96px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box; /* Para que el padding no afecte el tamaño */
+    scroll-snap-align: center; /* Alinea las cartas al centro al deslizar */
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 3.2px 0;
-    margin: 10px 96px;
-    width: 226px;
-    height: 320px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    width: 16rem;
+    height: 21.375rem;
     font-size: 16px;
+
     /* Colors and borders and shadows */
     background: rgba(61, 61, 61, 0.445);
     background: linear-gradient(350deg, rgba(95, 95, 95, 0.548) 0%, rgba(48, 47, 47, 0.205) 100%);
@@ -21,15 +27,25 @@ box-shadow: 2px 2px 14px -3px rgba(48,0,240,1);
 
 }
 
+.cardContainer a{
+    width: max-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .cardContainer h3 {
-    margin: 0;
+    margin: 0 0 1rem 0;
 
 }
 
 
 
 .cardImg {
-    width: 208px;
+    width: 256px;
     height: auto;
     
 
