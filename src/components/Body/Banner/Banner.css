@@ -1,0 +1,78 @@
+
+
+.ImgBanner{
+    width: 78vw;;
+    height: auto;
+    max-width: 90vw; 
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:  50px 0;
+}
+
+
+.banner-container{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    
+}
+.newProductsBannerContainer{
+    position: absolute; 
+    top: 50%; 
+    right: 20%; 
+    background-color: #f968008c;
+    width: 28.25rem;
+    height: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 1.125rem;
+}
+
+
+.newproductsTextContainer{
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    margin: .3125rem .625rem;
+    text-shadow: -0.7px 0.5px #ff5e00;
+    
+}
+
+.newproductsTextContainer h2 {
+    margin: 20px 0;
+    text-align: center;
+    width: 300px;
+    font-size: 1.625rem;
+
+}
+
+.newproductsTextContainer p {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.banner-btn{
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F45B8;
+    color: #fff;
+}

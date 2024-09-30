@@ -1,0 +1,18 @@
+.cardsContainer{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:  20vw;
+    margin:  25px 50px 80px  0;
+    background-color: #ffffff;
+    margin: 5rem;
+    
+
+    @media (max-width: 1200px) {
+    
+        width: 100vw;
+        height: 12rem;
+        }
+    }
+    
