@@ -2,7 +2,7 @@
 
 
 import {ArrowBigLeft, ArrowBigRight, Circle, CircleDot} from "lucide-react"
-import { useState } from "react"
+import { useState ,useEffect} from "react"
 import './ImageSlider.css'
 
 
@@ -30,6 +30,16 @@ export function ImageSlider({imageUrls}: ImageSliderProps) {
         })
         
     }
+
+    //autoplay function
+
+    useEffect(()=>{
+        const interval = setInterval(()=>{
+            showNextImage();
+        },3000);
+        return () => clearInterval(interval);
+    },[])
+
     return (
         <div className="imageSliderContainer"> 
             <div className="ImageSlider">

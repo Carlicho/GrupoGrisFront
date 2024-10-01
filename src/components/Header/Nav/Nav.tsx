@@ -30,8 +30,8 @@ const Nav: React.FC = () => {
       <ul className={`burger ${menuOpen ? 'open' : ''}`}>
         <li className='burgerLink'><Link to="/hombres">Hombres</Link></li>
         <li className='burgerLink'><Link to="/mujeres">Mujeres</Link></li>
-        <li className='burgerLink'><Link to="/sobrenosotros">Sobre Nosotros</Link></li>
         <li className='burgerLink'><Link to="/ofertas">Marcas</Link></li>
+        <li className='burgerLink'><Link to="/sobrenosotros">Sobre Nosotros</Link></li>
       </ul>
     </nav>
   );
