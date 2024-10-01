@@ -1,17 +1,26 @@
-import React from 'react';
-import Card from '../Cards/Card';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './ForWomen.css'
-import forwomen from '../../../assets/sport women2.jpg'
+import './ForWomen.css';
+import forwomen from '../../../assets/sport women2.jpg';
+import Card from '../Cards/Card';
+
+// Define an interface for the products (characters) you're fetching
+interface Producto {
+  id: number;
+  name: string;
+  species: string;
+  image: string;
+  gender: string;
+}
 
 const ForWomen: React.FC = () => {
-  const [Productos, setProductos] = useState([]);
+  // Use the defined interface for the state type
+  const [Productos, setProductos] = useState<Producto[]>([]);
 
   useEffect(() => {
     axios("https://rickandmortyapi.com/api/character/")
       .then(response => {
-        setProductos(response.data.results);
+        setProductos(response.data.results); // TypeScript now knows the structure of the data
       })
       .catch(error => {
         console.error('Error fetching data:', error);

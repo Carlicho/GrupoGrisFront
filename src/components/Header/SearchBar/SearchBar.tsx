@@ -4,19 +4,19 @@ import SearchIcon from '@mui/icons-material/Search';
 import LoginIcon from '@mui/icons-material/Login';
 import './SearchBar.css';
 import { Link } from 'react-router-dom';
-import IconButton from '@mui/material/IconButton';
+
 import MenuIcon from '@mui/icons-material/Menu';
 
 const SearchBar: React.FC= () => {
     return(
 
-      <div className='SearchBarContainer' > 
+        <div className='SearchBarContainer' > 
          
+ z     <div className='burguerbtn'>
       <div className='HeaderNav'>
+ z         </div>
 
-          <div className='burguerbtn'>
           <MenuIcon />
-          </div>
         
       <h1 className='nav-logo'><Link  to="/">SportFlex</Link></h1>
         <div className='searchcontainer'>

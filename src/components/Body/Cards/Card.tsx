@@ -3,16 +3,16 @@ import './Card.css';
 import { Link } from 'react-router-dom';
 
 interface CardProps {
-  id: number;
-  name: string;
-  species: string;
-  image: string;
-  gender: string;
+  id?: number;       // Make these optional
+  name?: string;     // Optional
+  species?: string;  // Optional
+  image: string;     // Keep image required since it's used
+  gender?: string;   // Optional
 }
 
 
     
-const Card: React.FC<CardProps> = ({ id, name, species, image, gender }) => {
+const Card: React.FC<CardProps> = ({ id, name, species, image }) => {
   console.log('Card id:', id); // Verifica el valor del id
 
   return (

@@ -5,8 +5,16 @@ import axios from 'axios';
 import './ForMen.css'
 import formen from '../../../assets/formen.jpg'
 
+interface Producto {
+  id: number;
+  name: string;
+  species: string;
+  image: string;
+  gender: string;
+}
+
 const ForMen: React.FC = () => {
-  const [Productos, setProductos] = useState([]);
+  const [Productos, setProductos] = useState<Producto[]>([]);
 
   useEffect(() => {
     axios("https://rickandmortyapi.com/api/character/")

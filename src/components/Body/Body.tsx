@@ -16,7 +16,7 @@ import pants from '../../assets/carousel card 1.png'
 
 
 const Body: React.FC = () => {
-  const [Productos, setProductos] = useState([]);
+  const [Productos, setProductos] = useState<any[]>([]);
 
   useEffect(() => {
     axios("https://rickandmortyapi.com/api/character/")
@@ -28,86 +28,84 @@ const Body: React.FC = () => {
       });
   }, []);
 
-  const IMAGES = [adidas, puma, nike]
+  const IMAGES = [adidas, puma, nike];
 
   return (
     <section className="body-container">
-      
-    <div className="BodyImageSlider">
-<ImageSlider imageUrls={IMAGES}  />
-    </div>
+      <div className="BodyImageSlider">
+        <ImageSlider imageUrls={IMAGES} />
+      </div>
 
-    <div className="brandsCards">
-          <Card image={shoes} />
-          <Card image={tshirt}/>
-          <Card image={pants}/>
-
+      <div className="brandsCards">
+        <Card image={shoes} />
+        <Card image={tshirt} />
+        <Card image={pants} />
       </div>
 
       <div className="videoContainer">
-            <video className="video" autoPlay loop muted={true}>
-              <source src={video} type="video/mp4" />
-            </video>{" "}
-         
-            <div className="textvideocontainer">
-              <h1 className="bodyh1"> Explora Nuestros Articulos</h1>
-              <button className="videobtn">Ver Mas</button>
-            </div>
+        <video className="video" autoPlay loop muted={true}>
+          <source src={video} type="video/mp4" />
+        </video>
+
+        <div className="textvideocontainer">
+          <h1 className="bodyh1">Explora Nuestros Articulos</h1>
+          <button className="videobtn">Ver Mas</button>
+        </div>
       </div>
 
       <div className="cardsBody">
-                {Productos.slice(0, 5).map((producto) => (
-                  <Card
-                    key={producto.id}
-                    name={producto.name}
-                    species={producto.species}
-                    image={producto.image}
-                    gender={producto.gender}
-                  />
-                ))}
+        {Productos.slice(0, 5).map((producto) => (
+          <Card
+            key={producto.id}
+            name={producto.name}
+            species={producto.species}
+            image={producto.image}
+            gender={producto.gender}
+          />
+        ))}
       </div>
 
       <Banner />
 
-          <img src={MenWomen} className="MenWomen" />
-          <h2>Ropa Hombres</h2>
-<div className="cardsBody">
-  {Productos.slice(0, 5).map((producto) => ( // Solo las primeras 5
-    <Card
-      key={producto.id}
-      name={producto.name}
-      species={producto.species}
-      image={producto.image}
-      gender={producto.gender}
-    />
-  ))}
-</div>
+      <img src={MenWomen} className="MenWomen" alt="Men and Women" />
+      <h2>Ropa Hombres</h2>
+      <div className="cardsBody">
+        {Productos.slice(0, 5).map((producto) => (
+          <Card
+            key={producto.id}
+            name={producto.name}
+            species={producto.species}
+            image={producto.image}
+            gender={producto.gender}
+          />
+        ))}
+      </div>
 
-<h2>Ropa Mujer</h2>
-<div className="cardsBody">
-  {Productos.slice(0, 5).map((producto) => (
-    <Card
-      key={producto.id}
-      name={producto.name}
-      species={producto.species}
-      image={producto.image}
-      gender={producto.gender}
-    />
-  ))}
-</div>
+      <h2>Ropa Mujer</h2>
+      <div className="cardsBody">
+        {Productos.slice(0, 5).map((producto) => (
+          <Card
+            key={producto.id}
+            name={producto.name}
+            species={producto.species}
+            image={producto.image}
+            gender={producto.gender}
+          />
+        ))}
+      </div>
 
-<h2>Camisetas de selecciones y clubes</h2>
-<div className="cardsBody">
-  {Productos.slice(0, 5).map((producto) => (
-    <Card
-      key={producto.id}
-      name={producto.name}
-      species={producto.species}
-      image={producto.image}
-      gender={producto.gender}
-    />
-  ))}
-</div>
+      <h2>Camisetas de selecciones y clubes</h2>
+      <div className="cardsBody">
+        {Productos.slice(0, 5).map((producto) => (
+          <Card
+            key={producto.id}
+            name={producto.name}
+            species={producto.species}
+            image={producto.image}
+            gender={producto.gender}
+          />
+        ))}
+      </div>
     </section>
   );
 };
