@@ -1,136 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-.SearchBarContainer{
+.SearchBarContainer {
     display: flex;
     flex-direction: column;
     background-color: #14213d;
     height: 2.8rem;
-    padding: .2rem;
+    padding: 0.2rem;
 
     @media (max-width: 815px) {
-    
-        height: 5rem;
-    
-        }
-    
+        height: auto;
+    }
 }
 
-.HeaderOfertas{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    background-color: #000;
-    color: #FFF;
-    width: 100vw;
-    margin: 0;
-    font-size: 18px;
-
-    
-    
-}
-
-.HeaderOfertas a{
+.HeaderOfertas a {
     text-decoration: none;
 }
 
-.HeaderNav{
+.HeaderNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #14213d;
     color: #fff;
     height: 1.625rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0 0 1px 0;
-    padding: .7rem 1.5rem .3rem 1.5rem;
+    padding: 0.7rem 1.5rem 0.3rem 1.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    font-style: normal;
     font-size: 18px;
     list-style: none;
     color: white;
 
-    
-      
-    
 
-
-        @media (max-width: 815px) {
-            
-            flex-wrap: wrap
-            }
 }
 
-.nav-logo{
+.nav-logo {
     margin: 0 1.25rem;
-    color:#FFF;
+    color: #FFF;
 
     @media (max-width: 815px) {
-    
         font-size: 1rem;
-        }
+    }
 }
 
 .nav-logo a {
-    color: white; 
-    text-decoration: none; 
+    color: white;
+    text-decoration: none;
 }
 
-.links{
+.links {
     display: flex;
     flex-grow: 1;
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    text-decoration: none; /* Elimina el subrayado */
 }
 
 .links a {
-    color: white; 
-    text-decoration: none; 
+    color: white;
+    text-decoration: none;
 }
-
 
 .links a:hover {
-    text-decoration: underline; /* Subrayado opcional al pasar el ratón */
+    text-decoration: underline;
 }
+
 .link {
     margin-right: 4.6875rem;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .login {
-    display: flex; 
-    margin:  0 1.25rem;
+    display: flex;
+    margin: 0 1.25rem;
     align-items: center;
+    @media (max-width: 815px) {
+        display: none;
+    }
 }
 
-.nav-icon{
-    margin:  0 7px;
+.nav-icon {
+    margin: 0 7px;
 }
 
-.searchcontainer{
+.searchcontainer {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
-.Searchinput{
+.Searchinput {
     width: 50vw;
     height: 3.1vh;
 
     @media (max-width: 815px) {
-    
-        display: none;
-        }
+        width: 30vw; /* Adjust the width for small screens */
+        height: 2vh;  /* Adjust height to fit better on smaller screens */
+    }
 }
 
-.burguerbtn{
-    display: none;
 
-    @media (max-width: 815px) {
-    
-        display: block;
-        }
-
-}

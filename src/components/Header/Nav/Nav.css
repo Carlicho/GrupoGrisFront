@@ -1,100 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #14213d;
-
-
+    padding: 0 20px;
+    position: relative;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
-    
 }
 
-
-
-
-
-.links{
+.links {
     display: flex;
     flex-grow: 1;
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    text-decoration: none; /* Elimina el subrayado */
-
-    @media (max-width: 815px) {
-    
-
-        display: none;
-        }
-
-
-
 }
 
 .links a {
-    color: white; 
-    text-decoration: none; 
-
+    color: white;
+    text-decoration: none;
 }
-
 
 .links a:hover {
-    text-decoration: underline; /* Subrayado opcional al pasar el ratón */
+    text-decoration: underline;
 }
+
 .link {
-    
     margin-right: 4.6875rem;
-    text-decoration: none; 
-    @media (max-width: 815px) {
-        
-display: none;
-        }
-
 }
 
-.link-b {
-    position: relative;
-    z-index: 100;
-    margin-right: 4.6875rem;
-    text-decoration: none; 
+.burger {
+    display: none;
     list-style: none;
-
+    flex-direction: column;
+    text-align: center;
+    background-color: #14213d;
 }
 
-.burguer{
-   display: none;
-   position: relative;
-   z-index: 100;
-   
+/* Hide the burger icon by default */
+.burger-icon {
+    display: none; /* Hide burger icon on larger screens */
+}
 
-    @media (max-width: 815px) {
-        
-        background-color: red;
-         display: none;/* display: none;  */
+/* Media Query for responsive behavior */
+@media (max-width: 815px) {
+    /* Hide the links */
+    .links {
+        display: none !important;  /* Add !important to override any potential conflicts */
+    }
+
+    /* Show the burger icon */
+    .burger-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 2rem;
+    }
+
+    /* By default, hide the burger menu */
+    .burger {
+        display: none;
+    }
+
+    /* When the burger menu is open, show the menu links */
+    .burger.open {
+        display: flex; /* Use flex display to show the menu */
         position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        top: 10%;
+        top: 27px;
         left: 0;
         right: 0;
+        z-index: 150;
+    }
+
+    .burgerLink {
+        list-style: none;
+        margin: 10px 0;
         text-align: center;
-        a{
-            color:#000;
-            display: block;
-            font-size: 2rem;
-        }
-        }
+    }
 
+    .burgerLink a {
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .burgerLink a:hover {
+        background-color: #14213d;
+        text-decoration: underline;
+    }
 }
-
-
-.nav-icon{
-    margin:  0 7px;
-}
-
