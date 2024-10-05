@@ -1,0 +1,77 @@
+.DetailContainer{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.cardDetailContainer {
+    /* display and Size */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.2px 0;
+    margin: 3rem;
+    width: 856px;
+    height: 35.375rem;
+    font-size: 16px;
+    /* Colors and borders and shadows */
+    background: rgba(61, 61, 61, 0.445);
+    background: linear-gradient(350deg, rgba(95, 95, 95, 0.548) 0%, rgba(48, 47, 47, 0.205) 100%);
+    border: 2px inset #000000;
+    border-radius: .4375rem;
+    cursor: pointer; /* Añade el cursor de mano para indicar que es clickeable */
+    -webkit-box-shadow: 2px 2px 14px -3px rgba(48,0,240,1);
+-moz-box-shadow: 2px 2px 14px -3px rgba(48,0,240,1);
+box-shadow: 2px 2px 14px -3px rgba(48,0,240,1);
+
+}
+
+.cardDetailContainer h3 {
+    margin: 0;
+
+}
+
+.cardDetailContainer a{ 
+    text-decoration: none;
+}
+
+
+
+.cardDetailImg {
+    width:24.125rem;
+    height: auto;
+    
+
+}
+
+.cardDetailInfo {
+    background: #eaeeef73;
+    padding: 0 .45rem;
+    position: absolute;
+    top: 10rem;
+    left: -0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 300;
+    color: #202020;
+    text-shadow: .0125rem .0125rem .0313rem #141414;
+    margin: .625rem;
+}
+
+.cardDetailImgContainer {
+    height: 110px;
+    margin-bottom: 80px;
+}
+
+
+
+.cardDetailBtn{
+    width: 5.5rem;
+    height: 1.5rem;
+    
+}
