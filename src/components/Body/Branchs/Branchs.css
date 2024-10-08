@@ -1,0 +1,39 @@
+.branchsContainer{
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    width: 100vw;
+    height: auto;
+}
+
+.selector{
+    display: flex;
+    width: 10vw;
+    height: 3vh;
+    margin-top: 25p;
+}
+
+.filtros{
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 2rem;
+    
+}
+
+.branchsProducts{
+    position: absolute;
+    top: 2vw;
+    right: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    
+}
+

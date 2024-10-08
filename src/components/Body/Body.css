@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.body-container{
+    margin:  0 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #dfe4e6;
+}
+
+.bodyh1{
+    padding: 12.8px;
+}
+
+.MenWomen{
+    width: 100vw;
+    margin: 160px 0;
+}
+
+.videoContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Ajusta según tus necesidades */
+}
+
+.video {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
+    border-radius: 10px;
+    
+    @media (max-width: 75rem) {
+        width: 672px; 
+        height: auto; /* Ajusta la altura para pantallas pequeñas */
+    }
+
+    @media (max-width: 50.9375rem) {
+    
+        width: 77vw
+        }
+}
+
+.textvideocontainer {
+    position: absolute;
+    bottom: 15%;  /* Ajusta la posición desde el borde inferior */
+    left: 70%;   /* Ajusta la posición desde el lado izquierdo */
+    transform: translateX(-50%); /* Opcional, para ajustes finos en el centrado horizontal */
+    text-shadow: -0.125rem -0.125rem #947d60, .125rem .125rem #947d60;
+    color: #ececec;
+    background-color: #f968006e;
+    width: 612px;
+    height: 302px;
+    font-size: 1.125rem;
+    
+    
+    @media (max-width: 75rem) {
+        width: 240px;
+        height: 160px;
+        font-size: 0.4em;
+        bottom: 10%; /* Ajusta la posición para pantallas pequeñas */
+        left: 50%;   /* Centra el contenedor en pantallas pequeñas */
+        transform: translateX(-50%); /* Centra en pantallas pequeñas */
+    }
+}
+
+
+.videobtn {
+    width: 115.2px;
+    height: 54px;
+    background-color: #172a5c;
+    color: #fff;
+    font-size: 16px;
+    
+
+    @media (max-width: 75rem) {
+
+        width: 64px;
+        height: 32px;
+        font-size: 1em;
+    }
+
+    @media (max-width: 50.9375rem) {
+    
+        width: 20vw
+        }
+}
+
+.MenWomen{
+    width: 100%;
+    border-radius: 10px;
+    @media (max-width: 75rem) {
+    
+        width: 80vw;
+        height: 192px;
+        }
+}
+
+
+
+.HomeMujeres{
+    border-bottom: .0625rem solid rgba(0, 0, 0, 0.452);
+    margin-top:105px;
+    margin-bottom: 105px;
+    width: 100%;
+    max-width: 78%;
+}
+
+
+
+.cardsContainer{
+    display: flex;
+}
+
+.cardsBody{
+    display: flex;
+    overflow-x: auto; 
+    margin: 5rem 0;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    
+    @media (max-width: 50.9375rem) {
+    
+        flex-wrap: wrap
+        }
+
+}
+
+.BodyCardsBtn{
+    position: absolute;
+    width: 80px;
+
+}
+
+.brandsCards{
+    margin: 4rem 0  5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+
+    @media (max-width: 50.9375rem) {
+    
+        flex-wrap: wrap;
+        }
+}
+
+.BodyImageSlider{
+    overflow-x: hidden;
+    max-width:100%;
+    width: 100%;
+    aspect-ratio: 9/3;
+    margin:    auto;
+    z-index: 1;
+    }
+
+.BodyImageSlider img{
+    animation: fadeIn 3s ease;
+    mask-image: linear-gradient(
+        black 98%,
+        transparent)  ;
+    border-radius: 0 0 10px 10px;
+}
+
